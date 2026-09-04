@@ -4,11 +4,12 @@ public:
         std::sort(s.begin(),s.end());
         std::sort(t.begin(), t.end());
 
-        for(int i = 0 ; i < s.length() ; i++){
+        int n = s.length();
+        for(int i = 0 ; i < n; i++){
             if(s[i] != t[i]){
                 return t[i];
             }
         }
-        return t[s.length()];
+        return t[n];
     }
 };
