@@ -5,6 +5,7 @@ public:
        std::sort(t.begin(),t.end());
         int n = s.length();
         bool flag = true;
+        
         if(n != t.length()){
             return false;
         }
