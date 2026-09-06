@@ -1,7 +1,7 @@
 class Solution {
 public:
     int gcdOfOddEvenSums(int n) {
-        int Gcd = 0;
+        int Gcd = 0 ;
         int sumOdd = 0;
         int sumEven = 0;
         for(int i = 1 ; i <= n*2 ; i++ ){
@@ -11,13 +11,12 @@ public:
                 sumOdd += i;
             }
         }
-        for(int i = 1 ; i <= std::min(sumEven , sumOdd); i++){
+        for(int i = std::min(sumEven , sumOdd); i >= 1 ; i-- ){
             if(sumEven % i == 0 && sumOdd % i == 0 ){
-                Gcd = i;
+                Gcd = i ;
+                break;
             }
-        }
-
+        }  
         return Gcd;
-        
     }
 };
