@@ -24,7 +24,5 @@ public:
             }else{
                 return right;
             }
-        
-        
     }
 };
